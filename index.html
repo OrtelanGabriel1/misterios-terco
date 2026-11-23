@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="Consulte os mistérios do Santo Terço e os dias da semana correspondentes.">
+  <title>Mistérios do Terço</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Mistérios do Terço - início">
+      <span class="brand-mark" aria-hidden="true">✝</span>
+      <span>Mistérios do Terço</span>
+    </a>
+    <a class="header-link" href="#como-rezar">Como rezar</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <p class="eyebrow">ORAÇÃO • CONTEMPLAÇÃO • FÉ</p>
+      <h1>Os Mistérios do<br><span>Santo Terço</span></h1>
+      <p class="hero-text">Encontre os mistérios correspondentes a cada dia da semana e acompanhe a meditação do Rosário.</p>
+      <div class="today-card" aria-live="polite">
+        <div>
+          <span class="today-label">HOJE É</span>
+          <strong id="today-name">Carregando...</strong>
+        </div>
+        <div class="today-result">
+          <span class="today-label">MISTÉRIOS DE HOJE</span>
+          <strong id="today-mystery">—</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="days-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CALENDÁRIO SEMANAL</p>
+          <h2 id="days-title">Mistérios por dia</h2>
+        </div>
+        <p class="section-note">Selecione um dia para consultar os mistérios.</p>
+      </div>
+      <div class="day-grid" id="day-grid">
+        <button class="day-button" data-day="0"><span>DOM</span><strong>Domingo</strong></button>
+        <button class="day-button" data-day="1"><span>SEG</span><strong>Segunda</strong></button>
+        <button class="day-button" data-day="2"><span>TER</span><strong>Terça</strong></button>
+        <button class="day-button" data-day="3"><span>QUA</span><strong>Quarta</strong></button>
+        <button class="day-button" data-day="4"><span>QUI</span><strong>Quinta</strong></button>
+        <button class="day-button" data-day="5"><span>SEX</span><strong>Sexta</strong></button>
+        <button class="day-button" data-day="6"><span>SÁB</span><strong>Sábado</strong></button>
+      </div>
+    </section>
+
+    <section class="mystery-section" aria-live="polite" aria-labelledby="mystery-title">
+      <div class="mystery-heading">
+        <div>
+          <p class="eyebrow" id="selected-day-label">DOMINGO</p>
+          <h2 id="mystery-title">Mistérios Gloriosos</h2>
+          <p class="mystery-description" id="mystery-description">Contemplamos a vitória de Cristo sobre a morte e a glória de Maria.</p>
+        </div>
+        <span class="mystery-symbol" id="mystery-symbol" aria-hidden="true">✧</span>
+      </div>
+      <ol class="mystery-list" id="mystery-list"></ol>
+    </section>
+
+    <section class="how-section" id="como-rezar">
+      <p class="eyebrow">UM GUIA SIMPLES</p>
+      <h2>Como rezar o Terço</h2>
+      <div class="steps">
+        <article class="step"><span>01</span><div><h3>Sinal da Cruz</h3><p>Comece fazendo o sinal da cruz.</p></div></article>
+        <article class="step"><span>02</span><div><h3>Orações iniciais</h3><p>Reze o Credo, um Pai-Nosso, três Ave-Marias e o Glória.</p></div></article>
+        <article class="step"><span>03</span><div><h3>Anuncie o mistério</h3><p>Leia ou anuncie o mistério correspondente à dezena.</p></div></article>
+        <article class="step"><span>04</span><div><h3>Reze a dezena</h3><p>Reze um Pai-Nosso, dez Ave-Marias e um Glória.</p></div></article>
+        <article class="step"><span>05</span><div><h3>Conclua</h3><p>Após as cinco dezenas, reze a Salve-Rainha e faça o sinal da cruz.</p></div></article>
+      </div>
+      <p class="small-note">Este é um resumo introdutório. A forma de rezar pode incluir outras orações conforme a tradição da comunidade.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-cross" aria-hidden="true">✝</span>
+    <p>Que a oração conduza à contemplação de Cristo.</p>
+    <span class="copyright">Mistérios do Terço</span>
+  </footer>
+</body>
+</html>
