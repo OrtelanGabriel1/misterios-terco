@@ -1,3 +1,5 @@
+https://ortelangabriel1.github.io/misterios-terco/
+
 # Mistérios do Terço
 
 Site estático e responsivo para consultar os mistérios do Santo Rosário e os dias da semana correspondentes.
